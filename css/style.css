@@ -1,0 +1,393 @@
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 47px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 50px;
+  position: relative;
+}
+
+.cover-g {
+  background: #f2f2f2;
+  padding-bottom: 50px;
+}
+
+.cover-w {
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+  max-width: 500px;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+  max-width: 300px;
+}
+
+.col-sm-6, 
+.col-lg-4 {
+  transition: .7s;
+}
+
+.col-sm-6:hover, 
+.col-lg-4:hover {
+  cursor: pointer;
+  overflow:hidden;
+  transform: scale(1.08);
+  background-color: rgba(1,1,1,0.05);
+}
+
+.image {
+  transition: .4s;
+}
+
+.image:hover {
+  transform: scale(1.04);
+}
+
+/* header */
+
+.header {
+  position: relative;
+  background: #fff;
+  z-index: 2;
+}
+
+.overlay {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  position: fixed;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  box-shadow: 3px 3px 6px -2px #555,
+    3px 3px 8px rgba(255, 255, 255, 0.8) inset;
+}
+
+.navbar-brand {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.navbar-brand img {
+  padding: 0 5px;
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 2;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.slides-container {
+  z-index: 1;
+}
+
+.titleMessage .heading p {
+  color: #333;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+  font-size: 50px;
+}
+
+.titleMessage .heading .sub {
+  font-size: 20px;
+}
+
+/* skill */
+
+.skill-box p {
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.skill-box {
+  padding-top: 50px;
+}
+
+.col-md-12 p {
+  line-height: 2;
+  font-size: 18px
+}
+
+/* works */
+
+
+.works {
+  margin-bottom: 50px;
+}
+
+/* shuffle.jsの調整 */
+
+.col-md-3 {
+  padding-top: 5px;
+  margin-bottom: 20px;
+  height: 220px;
+}
+
+.col-md-3 img {
+  box-shadow: 2px 3px 8px gray;
+}
+
+.banner-sizing {
+  width: 200px;
+}
+
+.logo-sizing {
+width: 200px;
+}
+
+.other-sizing {
+  width: 220px;
+  }
+
+.col-md-6 img {
+  box-shadow: 2px 3px 8px gray;
+}
+
+@media screen and (max-width: 767px) { 
+  .col-md-3 {
+    height: 290px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner-sizing {
+    width: 80vw;
+    max-width: 100%;
+  }
+  
+  .logo-sizing {
+  width: 50vw;
+  }
+  
+  .other-sizing {
+    width: 80vw;
+    max-width: 100%;
+    }
+}
+
+#hoge {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.col-md-6 button {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.selector {
+  margin-top: 20px;
+}
+
+#shuffleContainer {
+  margin-left: 15px;
+}
+
+.btn {
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.web-site {
+  margin-bottom: 50px;
+}
+
+/* works hover時キャプションを表示 */
+
+#works figure {
+  position: relative;
+}
+#works figure img {
+  position: relative;
+  z-index: 0;
+}
+#works figure h4  {
+  font-size: 0.9rem;
+  color: #444;
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#works figure p {
+  font-size: 0.8rem;
+  color: #888;
+  position: absolute;
+  bottom: -64px;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#works figure:hover h4 {
+  bottom: -36px;
+  opacity: 1;
+}
+
+#works figure:hover p {
+  bottom: -64px;
+  opacity: 1;
+}
+
+/* works */
+
+.size-adjust {
+  border-bottom: 1px solid #666;
+  padding-bottom: 50px;
+}
+
+
+
+.flyer-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flyer-img {
+  width:200px;
+  height:auto;
+}
+
+
+.about-content  {
+  text-align:justify;
+  padding-right: 2em;
+ }
+
+ .about-content p {
+  padding-left: 5em;
+  text-indent: -5em;;
+ }
+
+
+/* website サムネイル画像hover時の動き */
+
+#web-site figure {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 100%;
+  box-shadow: 2px 3px 8px grey;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
+  text-align: center;
+}
+#web-site figure * {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  overflow: hidden;
+
+}
+#web-site figure img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+#web-site figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#web-site figure h4,
+#web-site figure p {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  left:    0;
+  opacity: 0;
+}
+#web-site figure h4 {
+  padding: 0 30px;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+  font-size: 32px;
+  text-transform: uppercase;
+  bottom: 50%;
+  -webkit-transform: translate3d(0%, -100%, 0);
+  transform: translate3d(0%, -100%, 0);
+}
+
+#web-site figure p {
+  top: 60%;
+  padding: 0 50px;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  -webkit-transform: translate3d(0%, 100%, 0);
+  transform: translate3d(0%, 100%, 0);
+}
+
+#web-site figure:hover img,
+#web-site figure.hover img {
+  opacity: 0.1;
+  transform: scale(1.05);
+}
+
+#web-site figure:hover figcaption h4,
+#web-site figure.hover figcaption h4,
+#web-site figure:hover figcaption p,
+#web-site figure.hover figcaption p {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0) ;
+}
+
+#web-site figure:hover figcaption h4,
+#web-site figure.hover figcaption h4 {
+  opacity: 1;
+}
+
+#web-site figure:hover figcaption p,
+#web-site figure.hover figcaption p {
+  opacity: 1;
+}
+
+
+
+
+
+
