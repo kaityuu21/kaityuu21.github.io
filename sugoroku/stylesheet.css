@@ -1,0 +1,107 @@
+HTML CSS {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Turret Road', cursive;
+  background-color: #96ceb4;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.box {
+  width: 100%;
+  height: 100vh;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+
+h2 {
+
+  margin-bottom: 60px;
+  font-size: 45px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+
+}
+
+.trout {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: ;
+}
+
+.total-p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000;
+  font-family: 'kosugi';
+
+}
+
+.box__bg_photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.map {
+  display: flex;
+}
+
+.button {
+  margin-top: 20px;
+  font-size: 20px;
+  font-size: bold;
+  background-color: #8bc24c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.buttons {
+
+  margin-top: 30px;
+  background-color: #4288bf;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Turret Road';
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+
+}
+
+.buttons:hover {
+
+  color: red;
+  cursor: pointer;
+}
+
+.images {
+  margin-top: 20px;
+}
+
+margint {
+  margin-top: 20px;
+}

@@ -1,0 +1,97 @@
+<?php require_once('data.php') ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PLANT MARKETS</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <div class="menu-wrapper container">
+    <h1 class="logo">Café Progate</h1>
+    <form method="post" action="confirm.php">
+      <div class="menu-items">
+        <?php foreach ($plants as $plant): ?>
+          <div class="menu-item">
+            <img src="<?php echo $plant->getImage() ?>" class="menu-item-image">
+            <h3 class="menu-item-name"><?php echo $plant->getName() ?></h3>
+            <p class="price">¥<?php echo $plant->getTaxIncludedPrice() ?>（税込）</p>
+            <input type="text" value="0" name="<?php echo $plant->getName() ?>">
+            <span>個</span>
+          </div>
+        <?php endforeach ?>
+      </div>
+      <input type="submit" value="注文する">
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<?php
+require_once('menu.php');
+
+$itema = new Menu('JUICE', 600, '');
+$itemb = new Menu('COFFEE', 500, '');
+$itemc = new Menu('CURRY', 900, '');
+$itemd = new Menu('PASTA', 1200, '');
+
+$menus = array($itema, $itemb, $itemc, $itemd);
+
+?>
+
+
+
+<?php
+class Menu {
+  private $name;
+  private $price;
+  private $image;
+  private $orderCount = 0;
+  
+  
+  
+  public function __construct($name, $price, $image) {
+    $this->name = $name;
+    $this->price = $price;
+    $this->image = $image;
+  }
+  
+  
+  public function getName() {
+    return $this->name;
+  }
+  
+  public function getImage() {
+    return $this->image;
+  }
+  
+  public function getOrderCount() {
+    return $this->orderCount;
+  }
+  
+  public function setOrderCount($orderCount) {
+    $this->orderCount = $orderCount;
+  }
+  
+  public function getTaxIncludedPrice() {
+    return floor($this->price * 1.08);
+  }
+  
+  public function getTotalPrice() {
+    return $this->getTaxIncludedPrice() * $this->orderCount;
+  }
+  
+}
+?>
+
+
+
