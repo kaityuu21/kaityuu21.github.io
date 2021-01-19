@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="SAKURA CAFEの公式サイト。2019年11月に〇〇駅から徒歩5分のゆったりカフェ。">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>SAKURA CAFE</title>
+
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wzd5box',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a class="current" href="contact.html">お問い合わせ</a></li>
+
+      </ul>
+    </nav>
+
+    <div class="logo">
+      <img src="img/coffee-logo.png" alt="coffee-logo">
+    </div>
+
+    <div class="menu-btn">
+      +
+    </div>
+
+    <header class="contact-cover">
+      <h1>お問い合わせ</h1>
+    </header>
+
+    <section class="contact-wrapper">
+
+
+
+      <div class="contact-container">
+
+        <div class="contact-description">
+          <p>お問い合わせ内容に応じて、お気軽にお問い合わせください。</p>
+          <br>
+
+          <p>お問い合わせいただいた方には、後日担当者よりお問い合わせやご質問への回答とサービスの詳細に関する資料を送付いたします。</p>
+          <br>
+          <p>電話番号：0000-000-0000</p>
+          <p>(受付時間：平日10：00 - 17：30)</p>
+          <br>
+
+        </div>
+
+        <form action="#">
+          <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="your-name">
+          </div>
+
+          <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="your-email">
+          </div>
+
+          <div>
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="your-message"></textarea>
+          </div>
+
+          <input type="submit" class="button" value="送信する">
+        </form>
+
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    SAKURA CAFE &copy; 2019
+  </footer>
+
+
+
+  <script src="main.js"></script>
+
+</body></html>
